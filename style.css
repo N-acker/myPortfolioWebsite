@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+/* we are using a hashtag below for header since its an id */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size:100%;
+    background-position:center;
+}
+
+/* we are using a period for container since its a class */
+.container{
+    /* 10px from the top and bottom and 10% for the left and right side */
+    padding: 10px 10%;
+}
+
+nav{
+    /* display flex so the links will be side by side */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* the below tag adds the hover effect on the menu buttons */
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5271ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}

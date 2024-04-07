@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js"></script>
 </head>
 <!-- id being used for main div but class being used for sub divs -->
 <body>
@@ -21,7 +22,7 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Software Developer</p>
+                <p>Aspiring Software Engineer</p>
                 <h1>Hi, I'm <span>Nathaniel</span><br>from Toronto</h1>
             </div>
         </div>
@@ -39,6 +40,32 @@
                     voluptate suscipit ratione quae aut quas nesciunt ullam ipsa fugit 
                     iure consequatur explicabo, velit aliquid itaque sequi.
                 </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing cool things</li>
+                        <li><span>Web Developement</span><br>Designing Web stuff</li>
+                        <li><span>App Developement</span><br>Designing App stuff</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jun 2023 - Feb 2024</span><br>Web Developer at STEM Fellowship</li>
+                        <li><span>May 2022 - Jul 2022</span><br>Software Developer at Samme (start up)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Bsc in Computer Science from Lassonde School of Engineering</li>
+                        <li><span>2021</span><br>June College Web Dev and JS courses</li>
+                        <li><span>2020</span><br>Bsc in Biology from York University</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

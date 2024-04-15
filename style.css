@@ -17,6 +17,7 @@ body{
     background-image: url(images/background.png);
     background-size:100%;
     background-position:center;
+    background-attachment: fixed;
 }
 
 /* we are using a period for container since its a class */
@@ -31,14 +32,24 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position:fixed;
+    background-color: #080808;
+    width: 100%;
+    top: 0px;
+    padding: 10px 0px;
+    z-index: 500;
 }
 
 .logo{
     width: 140px;
 }
 
+nav ul{
+    padding-right: 20%;
+}
+
 nav ul li{
-    display: inline-block;
+    display:inline-block;
     list-style: none;
     margin: 10px 20px;
 }
@@ -49,6 +60,7 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+
 
 /* the below tag adds the hover effect on the menu buttons */
 
@@ -172,14 +184,14 @@ nav ul li a:hover::after{
 
 .languages-tools-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 .languages-tools-list div{
     background: #262626;
-    padding: 30px;
+    padding: 20px;
     font-size: 15px;
     font-weight: 300;
     border-radius: 10px;
@@ -187,7 +199,6 @@ nav ul li a:hover::after{
 }
 
 .languages-tools-list div:hover{
-    background: #5271ff;
     transform: translate(-10px);
 }
 
@@ -292,10 +303,41 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 
+.mail{
+    margin-top: 30px;
+}
+
+/* this is for the phone phone icon */
 .contact-left p i{
     color: #5271ff;
     margin-right: 15px;
     font-size: 25px;
+}
+
+.mail i{
+    color: #5271ff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.mail{
+    transition: transform 0.5s;
+}
+
+.mail:hover{
+    transform: translateX(10px);
+}
+
+
+/* .contact-left p a i{
+    color: #5271ff;
+    margin-right: 15px;
+    font-size: 25px;
+} */
+
+.contact-left a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .social-icons{
@@ -356,3 +398,10 @@ form .btn2{
 }
 
 /* ----------------css for responsivness----------------- */
+
+@media only screen and (max-width: 600px){
+
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+}

@@ -6,7 +6,7 @@
     <title>Nathaniel Acker</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/485873c4cb.js" crossorigin="anonymous"></script>
-    <script src="portfolio.js"></script>
+    <script src="portfolio.js" defer></script>
     <link rel="icon" type="image/png" href="icons/NA.png">
 </head>
 <!-- id being used for main div but class being used for sub divs -->
@@ -15,14 +15,16 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#languages">Languages</a></li>
                     <li><a href="#tools">Tools</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Aspiring Software Engineer</p>
@@ -60,7 +62,7 @@
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>Jun 2023 - Feb 2024</span><br>Web Developer at STEM Fellowship</li>
-                        <li><span>May 2022 - Jul 2022</span><br>Software Developer at Samme (start up)</li>
+                        <li><span>May 2022 - Jul 2022</span><br>Software Developer Intern at Samme (start up)</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -206,7 +208,7 @@
             <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -214,7 +216,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Nathaniel Acker</p>
+        <p>2024 © Nathaniel Acker.</p>
     </div>
 </div>
 

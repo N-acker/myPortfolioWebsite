@@ -28,7 +28,7 @@
             </nav>
             <div class="header-text">
                 <p>Aspiring Software Engineer</p>
-                <h1>Hi, I'm <span>Nathaniel</span><br>from Toronto</h1>
+                <h1><span class="white">Hi, I'm <span id="blue">Nathaniel</span></span><span class="white">from Toronto</span></h1>
             </div>
         </div>
     </div>
@@ -206,12 +206,13 @@
                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -219,6 +220,8 @@
         <p>2024 © Nathaniel Acker.</p>
     </div>
 </div>
+
+
 
 </body>
 </html>

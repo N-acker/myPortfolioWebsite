@@ -132,3 +132,23 @@ const initSlider = () => {
 }
 
 window.addEventListener("load", initSlider);
+
+
+// below is to display the hidden projects after clicking see more 
+ 
+function reveal() {
+  // Get the hidden section and the button by their IDs
+  var hiddenSection = document.getElementById('hidden');
+  var btn = document.querySelector('.btn3');
+
+  // Check if the hidden section is currently displayed
+  if (hiddenSection.style.display === 'none' || hiddenSection.style.display === '') {
+    // If it's not displayed, show it and update the button text
+    hiddenSection.style.display = 'grid';
+    btn.textContent = 'Show Less';
+  } else {
+    // If it is displayed, hide it and update the button text
+    hiddenSection.style.display = 'none';
+    btn.textContent = 'Show More';
+  }
+}

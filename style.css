@@ -520,10 +520,6 @@ nav .fa-solid{
 
     #header{
         background-image: url(images/phone-background.png);
-        width: 100%;
-        background-size:100%;
-        background-position:center;
-        background-attachment: fixed;
     }
 
     .header-text{
@@ -544,6 +540,7 @@ nav .fa-solid{
         font-size: 25px;
         cursor: pointer;
     }
+    
     
     nav ul{
         background: #5271ff;
@@ -583,6 +580,10 @@ nav .fa-solid{
 
     .about-col-2{
         font-size: 14px;
+    }
+
+    #me{
+        display: none;
     }
 
     .tab-links{

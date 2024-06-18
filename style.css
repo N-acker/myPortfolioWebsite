@@ -524,11 +524,11 @@ nav .fa-solid{
 
     .header-text{
         margin-top: 70%;
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .header-text h1{
-        font-size: 30px;
+        font-size: 50px;
     }
 
     #blue{
@@ -582,9 +582,6 @@ nav .fa-solid{
         font-size: 14px;
     }
 
-    #me{
-        display: none;
-    }
 
     .tab-links{
         font-size: 16px;

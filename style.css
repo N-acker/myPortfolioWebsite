@@ -27,7 +27,7 @@ body{
 /* we are using a period for container since its a class */
 .container{
     /* 10px from the top and bottom and 10% for the left and right side */
-    padding: 10px 10%;
+    padding: 10px 10% 0px;
 }
 
 nav{

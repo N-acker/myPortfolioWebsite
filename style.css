@@ -631,6 +631,9 @@ nav .fa-solid{
         width: 20%;
     }
 
+    #me{
+        display: none;
+    }
     
 }
 

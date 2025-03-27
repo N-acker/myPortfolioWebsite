@@ -1,10 +1,11 @@
-🌐 Live Website: https://nathanielacker.com/
-🛠 Built with: HTML5, CSS3, JavaScript (no frameworks)
+🌐 Live Website: nathanielacker.com
+
+🔧 Built with: HTML5, CSS3, JavaScript (no frameworks)
 ⚡ Hosting: Automatically deployed via GitHub Pages
 Overview
 
 A lightweight, responsive portfolio website showcasing my projects and skills. Built with pure HTML, CSS, and JavaScript for fast performance and simplicity.
-Key Features
+🚀 Key Features
 
     Zero-Build Process – No frameworks, bundlers, or dependencies.
 
@@ -14,7 +15,7 @@ Key Features
 
     Custom Domain – Secured via Namecheap.
 
-Tech Stack
+🛠 Tech Stack
 
     Frontend: Vanilla HTML5, CSS3, JavaScript
 

@@ -137,18 +137,19 @@ window.addEventListener("load", initSlider);
 // below is to display the hidden projects after clicking see more 
  
 function reveal() {
-  // Get the hidden section and the button by their IDs
-  var hiddenSection = document.getElementById('hidden');
+  // Get the hidden section and the button by their class name
+  var hiddenSections = document.getElementsByClassName('hidden');
   var btn = document.querySelector('.btn3');
 
-  // Check if the hidden section is currently displayed
-  if (hiddenSection.style.display === 'none' || hiddenSection.style.display === '') {
-    // If it's not displayed, show it and update the button text
-    hiddenSection.style.display = 'grid';
-    btn.textContent = 'Show Less';
-  } else {
-    // If it is displayed, hide it and update the button text
-    hiddenSection.style.display = 'none';
-    btn.textContent = 'Show More';
+  // Check if the first hidden element is currently visible
+  var isHidden = (hiddenSections[0].style.display === 'none' || 
+    hiddenSections[0].style.display === '');
+
+  // Loop through all hidden elements and toggle their display
+  for (var i = 0; i < hiddenSections.length; i++) {
+    hiddenSections[i].style.display = isHidden ? 'grid' : 'none';
   }
+
+  // Update button text
+  btn.textContent = isHidden ? 'Show Less' : 'Show More';
 }

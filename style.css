@@ -80,10 +80,58 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.hero-shell{
+    display: flex;
+    /* box-sizing: border-box; */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    /* position: relative; */
+}
+
 .header-text{
-    margin-top: 20%;
+    position: relative;
+    padding: 5%;
+    border-radius: 20px;
+    margin: 15% 0;
     font-size: 30px;
     text-align: center;
+    overflow: hidden;
+}
+
+/*Every normal HTML element can have two extra “virtual” layers automatically provided by CSS:
+1. before:: an invisible box inserted before the element’s real content; we turn it into the spinning glowing gradient (“the laser”)
+2. after:: an invisible box inserted after the element’s real content; we turn it into the dark mask that hides the center and leaves only the edge
+***** also btw commenting like this // in css breaks stuff
+*/
+
+
+.header-text::before,
+.header-text::after{
+    content:""; /*makes sure the box is there*/
+    position:absolute;
+    height: 250%; /* height of spinning rectable */ 
+    width: 200%; /* length of spinning rectable */ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-text::before{ /*layer that controls the beam's z-index*/
+    background: conic-gradient(#5271ff 30deg, transparent 170deg);
+    animation: rotate 4s infinite linear;
+    z-index: -1;
+}
+.header-text::after{ /*layer with black platform in front of rectabgle beam */
+    background: #111;
+    height: 92%;
+    width: 95%;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
 }
 
 .header-text h1{
@@ -554,7 +602,7 @@ nav .fa-solid{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+        /* z-index: 2; */
         transition: right 0.5s;
     }
 
